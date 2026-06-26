@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Scroll Scrub Demo</title>
+<title>Scroll Scrub</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { background: #0a0a0a; font-family: sans-serif; }
+  body { background: #0a0a0a; }
   #scrubSection { position: relative; height: 400vh; }
   #stickyWrap {
     position: sticky; top: 0; height: 100vh; width: 100%;
@@ -27,7 +27,7 @@
 <script>
 (function () {
   const FRAME_COUNT = 100;
-  const FRAME_PATH = (i) => `https://cdn.jsdelivr.net/gh/dhami7455-dot/AURUS.KARISMA..COM@main/frames/frame_${String(i + 1).padStart(4, '0')}.webp`;
+  const FRAME_PATH = (i) => `frames/frame_${String(i + 1).padStart(4, '0')}.jpg`;
 
   const canvas = document.getElementById('scrubCanvas');
   const ctx = canvas.getContext('2d');
